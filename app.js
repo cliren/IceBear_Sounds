@@ -1,5 +1,7 @@
 import {
-  StyleSheet
+  StyleSheet,
+  View,
+  TouchableHighlight
 } from 'react-native';
 
 import React, {Component} from 'react';
@@ -12,31 +14,23 @@ console.log(Sound);
 export default class ListExample extends Component {
   
   playSound(url) {
-    let sound = new Sound("./IB_awnyawng.mp3", Sound.MAIN_BUNDLE, (error) => {
-      if (error) {
-        console.log('failed to load the sound', error);
-      } else { // loaded successfully
-        console.log('duration in seconds: ' + sound.getDuration() +
-          'number of channels: ' + sound.getNumberOfChannels());
-      }
-    });
-
-    // Play the sound with an onEnd callback
-    sound.play((success) => {
-      if (success) {
-        console.log('successfully finished playing');
+    let s = new Sound(url, Sound.MAIN_BUNDLE, (e) => {
+      if (e) {
+        console.log('error', e);
       } else {
-        console.log('playback failed due to audio decoding errors');
+        console.log('duration', s.getDuration());
+        s.play();
       }
     });
-    sound.setVolume(0.5);
   }
   
   generateSoundItems() {
     return sounds().map((soundByte, index) => {
       let playSound = this.playSound.bind(this, soundByte.url);
-      return <ListItem key={index} onPress={playSound}>
-        <Text>{soundByte.name}</Text>
+      return <ListItem key={index} >
+        <TouchableHighlight onPress={playSound}>
+          <View><Text>{soundByte.name}</Text></View>
+        </TouchableHighlight>
       </ListItem>;
     });
   }
@@ -56,6 +50,8 @@ export default class ListExample extends Component {
 
 const styles = StyleSheet.create({
   
+  listItem: {
+  },
   container: {
     top: 50
   },

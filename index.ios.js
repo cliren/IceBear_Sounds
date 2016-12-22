@@ -42,3 +42,8 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('IceBear_Sounds', () => IceBear_Sounds);
+
+// import {AppRegistry} from 'react-native';
+// import MainView from './main.js';
+// AppRegistry.registerComponent('IceBear_Sounds', () => MainView);
+
