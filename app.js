@@ -4,8 +4,8 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-import React, {Component} from 'react';
-import {Container, Content, List, ListItem, Text} from 'native-base';
+import React, {Component, Image} from 'react';
+import {Container, Content, List, ListItem, Text, Card, CardItem} from 'native-base';
 import sounds from './sounds/sounds';
 var Sound = require('react-native-sound');
 
@@ -27,7 +27,7 @@ export default class ListExample extends Component {
   generateSoundItems() {
     return sounds().map((soundByte, index) => {
       let playSound = this.playSound.bind(this, soundByte.url);
-      return <ListItem key={index} >
+      return <ListItem key={index}>
         <TouchableHighlight onPress={playSound}>
           <View><Text>{soundByte.name}</Text></View>
         </TouchableHighlight>
@@ -36,12 +36,32 @@ export default class ListExample extends Component {
   }
   
   render() {
+    return this.renderCard();
+  }
+  
+  renderSongList() {
+    return <List>
+      {this.generateSoundItems()}
+    </List>;
+  }
+  
+  renderCard() {
     return (
-      <Container style={styles.container}>
+      <Container>
         <Content>
-          <List>
-            {this.generateSoundItems()}
-          </List>
+          <Card>
+            <CardItem >
+              <Text>NativeBase</Text>
+            </CardItem>
+            
+            <CardItem cardBody>
+              <Image style={{ resizeMode: 'cover' }} source={require('./images/wallpaper.png')}/>
+              
+              {
+                this.renderSongList()
+              }
+            </CardItem>
+          </Card>
         </Content>
       </Container>
     );
@@ -50,8 +70,7 @@ export default class ListExample extends Component {
 
 const styles = StyleSheet.create({
   
-  listItem: {
-  },
+  listItem: {},
   container: {
     top: 50
   },
