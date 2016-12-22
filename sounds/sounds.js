@@ -5,24 +5,28 @@ const soundBites = [
 export default function() {
   return [
     {
-      name: "One",
+      name: "awnyawng",
       url: "IB_awnyawng.mp3"
     },
     {
-      name: "Two",
+      name: "jizomida",
       url: "IB_jizomida.mp3"
     },
     {
-      name: "Three",
+      name: "ossuoshipshoe",
       url: "IB_ossuoshipshoe.mp3"
     },
     {
-      name: "Four",
+      name: "poodi something",
       url: "IB_poogi_something.mp3"
     },
     {
-      name: "Five",
+      name: "shilliyagisamnidad",
       url: "IB_shilliyagisamnidad.mp3"
+    },
+    {
+      name: "tote wrap",
+      url: "tote_wrap.mp3"
     }
   ];
 };

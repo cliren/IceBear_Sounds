@@ -75,7 +75,7 @@ export default class ListExample extends Component {
         <Content>
           <Card>
             <CardItem >
-              <Text>Songs</Text>
+              <Text>Ice Bear says</Text>
             </CardItem>
             
             <CardItem cardBody>
