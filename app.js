@@ -25,7 +25,7 @@ export default class ListExample extends Component {
       }
     });
   }
-  
+
   generateSoundItems() {
     return sounds().map((soundByte, index) => {
       let playSound = this.playSound.bind(this, soundByte.url);
