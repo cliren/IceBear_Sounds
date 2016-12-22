@@ -37,6 +37,7 @@
 		A62A909D1E0B8433003D5752 /* IB_ossuoshipshoe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A62A90981E0B8433003D5752 /* IB_ossuoshipshoe.mp3 */; };
 		A62A909E1E0B8433003D5752 /* IB_poogi_something.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A62A90991E0B8433003D5752 /* IB_poogi_something.mp3 */; };
 		A62A909F1E0B8433003D5752 /* IB_shilliyagisamnidad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A62A909A1E0B8433003D5752 /* IB_shilliyagisamnidad.mp3 */; };
+		A62A90AC1E0B9CAA003D5752 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A62A90AB1E0B9CAA003D5752 /* images */; };
 		C017393946FB4275B83413D9 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0578CFB4629B491A9FE7C5CC /* SimpleLineIcons.ttf */; };
 		C278F61A06774720A1AC22FD /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4260AD6C0344AFE9B4F9C6B /* Foundation.ttf */; };
 		CED311EF17284F818B7B2751 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A61C611EDFF4933AE37CA44 /* EvilIcons.ttf */; };
@@ -235,6 +236,7 @@
 		A62A90981E0B8433003D5752 /* IB_ossuoshipshoe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IB_ossuoshipshoe.mp3; sourceTree = "<group>"; };
 		A62A90991E0B8433003D5752 /* IB_poogi_something.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IB_poogi_something.mp3; sourceTree = "<group>"; };
 		A62A909A1E0B8433003D5752 /* IB_shilliyagisamnidad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IB_shilliyagisamnidad.mp3; sourceTree = "<group>"; };
+		A62A90AB1E0B9CAA003D5752 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		A7420D8C756640FDB2DFB3CD /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		BC1EDCFB3B734F4EA16278B9 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		CB676C161B9747998C5EEC7D /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 		13B07FAE1A68108700A75B9A /* IceBear_Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				A62A90AB1E0B9CAA003D5752 /* images */,
 				A62A90961E0B8433003D5752 /* IB_awnyawng.mp3 */,
 				A62A90971E0B8433003D5752 /* IB_jizomida.mp3 */,
 				A62A90981E0B8433003D5752 /* IB_ossuoshipshoe.mp3 */,
@@ -775,6 +778,7 @@
 				A62A909D1E0B8433003D5752 /* IB_ossuoshipshoe.mp3 in Resources */,
 				A62A909F1E0B8433003D5752 /* IB_shilliyagisamnidad.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A62A90AC1E0B9CAA003D5752 /* images in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				0E77F05E274D4F9082954291 /* Entypo.ttf in Resources */,
 				A62A909C1E0B8433003D5752 /* IB_jizomida.mp3 in Resources */,
