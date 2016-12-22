@@ -1,12 +1,14 @@
 import {
   StyleSheet,
   View,
-  TouchableHighlight
+  TouchableHighlight,
+  Image
 } from 'react-native';
 
-import React, {Component, Image} from 'react';
+import React, {Component} from 'react';
 import {Container, Content, List, ListItem, Text, Card, CardItem} from 'native-base';
 import sounds from './sounds/sounds';
+import {Col, Row, Grid} from 'react-native-easy-grid';
 var Sound = require('react-native-sound');
 
 console.log(Sound);
@@ -36,7 +38,29 @@ export default class ListExample extends Component {
   }
   
   render() {
-    return this.renderCard();
+    return (
+      <View style={styles.container}>
+        {this.renderCard()}
+        <Image style={styles.image1} source={require('./images/standing.png')}/>
+      </View>
+    );
+  }
+  
+  render1() {
+    return (
+      <Container style={styles.container}>
+        <Content>
+          <Grid>
+            <Col>
+              {this.renderCard()}
+            </Col>
+            <Col>
+              <Image style={styles.image1} source={require('./images/standing.png')}/>
+            </Col>
+          </Grid>
+        </Content>
+      </Container>
+    );
   }
   
   renderSongList() {
@@ -47,15 +71,14 @@ export default class ListExample extends Component {
   
   renderCard() {
     return (
-      <Container>
+      <Container style={styles.listView}>
         <Content>
           <Card>
             <CardItem >
-              <Text>NativeBase</Text>
+              <Text>Songs</Text>
             </CardItem>
             
             <CardItem cardBody>
-              <Image style={{ resizeMode: 'cover' }} source={require('./images/wallpaper.png')}/>
               
               {
                 this.renderSongList()
@@ -70,9 +93,19 @@ export default class ListExample extends Component {
 
 const styles = StyleSheet.create({
   
+  image1: {
+    height: 300,
+    width: 150
+  },
+  listView: {
+    width: 50
+  },
+  rightImage: {},
   listItem: {},
   container: {
-    top: 50
+    flex: 1,
+    flexDirection: 'row',
+    marginTop: 64
   },
   welcome: {
     fontSize: 20,
