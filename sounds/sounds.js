@@ -1,9 +1,13 @@
-const soundBites = [
-  "IB_awnyawng", "IB_jizomida", "IB_ossuoshipshoe", "IB_poogi_something", "IB_shilliyagisamnidad"
-];
+//const soundBites = [
+//  "IB_koreanxmasheaven","IB_awnyawng", "IB_jizomida", "IB_ossuoshipshoe", "IB_poogi_something", "IB_shilliyagisamnidad"
+//];
 
 export default function() {
   return [
+    {
+      name: "Merry Xmas Min!",
+      url: "IB_koreanxmasheaven.mp3"
+    },
     {
       name: "awnyawng",
       url: "IB_awnyawng.mp3"
@@ -27,6 +31,10 @@ export default function() {
     {
       name: "tote wrap",
       url: "tote_wrap.mp3"
-    }
+    },
+    {
+      name: "best thing",
+      url: "IB_best_thing_to_happen.mp3"
+    },
   ];
 };
